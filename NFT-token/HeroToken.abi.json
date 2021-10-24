@@ -1,0 +1,64 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createHero",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"heroclass","type":"string"},
+				{"name":"mana","type":"uint256"},
+				{"name":"power","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "put_up_for_sale",
+			"inputs": [
+				{"name":"key","type":"uint256"},
+				{"name":"cost","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getInfoHero",
+			"inputs": [
+				{"name":"key","type":"uint256"}
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"heroclass","type":"string"},{"name":"mana","type":"uint256"},{"name":"power","type":"uint256"}],"name":"value0","type":"tuple"}
+			]
+		},
+		{
+			"name": "checkCost",
+			"inputs": [
+				{"name":"key","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"cost","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"heroclass","type":"string"},{"name":"mana","type":"uint256"},{"name":"power","type":"uint256"}],"name":"tokenArr","type":"tuple[]"},
+		{"name":"tokenMap","type":"map(uint256,uint256)"},
+		{"name":"tokenSale","type":"map(uint256,uint256)"}
+	]
+}
