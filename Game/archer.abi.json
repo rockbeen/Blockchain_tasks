@@ -1,0 +1,67 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"val","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "Damage",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "Attack_enemy",
+			"inputs": [
+				{"name":"addInt","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "death_unit",
+			"inputs": [
+				{"name":"winner","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "Defense",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "accept_attack",
+			"inputs": [
+				{"name":"damage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"HP","type":"uint256"},
+		{"name":"addr_base","type":"address"},
+		{"name":"attack","type":"uint256"}
+	]
+}
